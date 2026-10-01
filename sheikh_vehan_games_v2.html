@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sheikh Vehan Games</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#03040a;color:#fff;font-family:Inter,Segoe UI,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 15% 5%,#06435a 0,transparent 27%),radial-gradient(circle at 85% 20%,#4a1049 0,transparent 25%),radial-gradient(circle at 50% 90%,#061e2d 0,transparent 32%),#03040a}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.18;background-image:linear-gradient(#fff1 1px,transparent 1px),linear-gradient(90deg,#fff1 1px,transparent 1px);background-size:60px 60px;mask-image:linear-gradient(to bottom,#000,transparent 75%)}
+nav{position:fixed;z-index:50;top:0;left:0;right:0;height:70px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;background:#03040acc;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff10}
+.logo{font-weight:1000;letter-spacing:3px;font-size:18px;color:#62f5ff}.logo span{color:#ff5bd5}.links{display:flex;gap:26px}.links a{color:#aab4cf;text-decoration:none;font-size:13px}.links a:hover{color:#fff}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:110px 20px 70px;position:relative;overflow:hidden}.heroInner{max-width:900px}.tag{display:inline-block;border:1px solid #63f6ff44;background:#63f6ff0d;border-radius:50px;padding:8px 13px;color:#7ceeff;font-size:10px;letter-spacing:4px}
+.hero h1{font-size:clamp(50px,13vw,120px);line-height:.9;margin:22px 0 15px;letter-spacing:8px;font-weight:1000;background:linear-gradient(90deg,#63f6ff,#fff 45%,#ff62d8);-webkit-background-clip:text;color:transparent;text-shadow:0 0 50px #63f6ff22}.hero h2{font-size:clamp(18px,4vw,30px);font-weight:300;color:#d8dff1;margin:0}.hero p{color:#8792af;max-width:600px;margin:18px auto 28px;line-height:1.7}.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{padding:13px 22px;border-radius:30px;text-decoration:none;font-weight:900;font-size:13px}.primary{background:#63f6ff;color:#031016;box-shadow:0 0 30px #63f6ff44}.ghost{border:1px solid #40506e;color:#dfe7f8;background:#07101acc}
+.floating{position:absolute;border-radius:50%;filter:blur(.2px);box-shadow:0 0 70px currentColor;opacity:.45}.f1{width:180px;height:180px;left:7%;top:28%;color:#00eaff;background:#00eaff}.f2{width:130px;height:130px;right:9%;top:24%;color:#ff48cf;background:#ff48cf}.f3{width:70px;height:70px;left:24%;bottom:15%;color:#fff;background:#fff}
+section{max-width:1180px;margin:auto;padding:90px 6%}.heading{text-align:center;margin-bottom:42px}.heading .mini{font-size:10px;letter-spacing:5px;color:#63f6ff}.heading h2{font-size:38px;margin:10px 0}.heading p{color:#7f8aa7;margin:0}
+.feature{display:grid;grid-template-columns:1.25fr .75fr;gap:20px}.featureCard,.card,.about{border:1px solid #ffffff12;background:linear-gradient(145deg,#0b1424ee,#060912e8);border-radius:24px;box-shadow:0 20px 70px #0008;overflow:hidden}.featureArt{height:360px;position:relative;background:radial-gradient(circle at 50% 42%,#63f6ff77 0,transparent 18%),linear-gradient(135deg,#062838,#180c2b 75%);display:grid;place-items:center}.planet{width:190px;height:190px;border-radius:50%;background:radial-gradient(circle at 30% 25%,#fff,#63f6ff 8%,#08718c 35%,#10183e 70%);box-shadow:0 0 70px #63f6ff99, inset -25px -30px 50px #000b}.rings{position:absolute;width:330px;height:95px;border:3px solid #63f6ff99;border-radius:50%;transform:rotate(-15deg)}.featureInfo{padding:25px}.featureInfo h3{font-size:28px;margin:0 0 8px}.featureInfo p{color:#929db9;line-height:1.6}.play{display:inline-block;margin-top:10px;padding:11px 17px;border-radius:20px;background:#63f6ff;color:#031016;text-decoration:none;font-weight:900;font-size:12px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}.stat{padding:17px;text-align:center;background:#ffffff06;border:1px solid #ffffff0b;border-radius:15px}.stat b{display:block;font-size:24px;color:#63f6ff}.stat span{font-size:10px;color:#7e89a4}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:20px;transition:.25s}.card:hover{transform:translateY(-8px);border-color:#63f6ff55}.icon{height:140px;border-radius:16px;display:grid;place-items:center;font-size:55px;background:radial-gradient(circle,#63f6ff33,transparent 45%),#080e1a}.card h3{font-size:20px;margin:17px 0 7px}.card p{color:#7f8ba7;font-size:13px;line-height:1.55;min-height:60px}.status{color:#63f6ff;font-size:10px;letter-spacing:2px}
+.about{padding:40px;text-align:center}.about h2{font-size:32px;margin:0 0 12px}.about p{max-width:720px;margin:auto;color:#8e99b4;line-height:1.8}
+footer{padding:35px 20px;text-align:center;color:#58637d;border-top:1px solid #ffffff0d;font-size:11px}footer b{color:#63f6ff}
+@media(max-width:750px){.links{gap:12px}.links a{font-size:11px}.feature,.grid{grid-template-columns:1fr}.featureArt{height:260px}.stats{grid-template-columns:1fr 1fr 1fr}.f1{left:-50px}.f2{right:-40px}}
+</style>
+</head>
+<body>
+<nav><div class="logo">SHEIKH <span>VEHAN</span></div><div class="links"><a href="#home">HOME</a><a href="#games">GAMES</a><a href="#about">ABOUT</a></div></nav>
+<header class="hero" id="home">
+<div class="floating f1"></div><div class="floating f2"></div><div class="floating f3"></div>
+<div class="heroInner"><div class="tag">INDEPENDENT GAME CREATOR</div><h1>SHEIKH<br>VEHAN</h1><h2>ENTER THE NEXT LEVEL.</h2><p>Welcome to my gaming universe — a place for 3D experiments, arcade games and worlds built one idea at a time.</p><div class="buttons"><a class="btn primary" href="#games">EXPLORE GAMES</a><a class="btn ghost" href="#about">MEET THE CREATOR</a></div></div>
+</header>
+<section id="games"><div class="heading"><div class="mini">GAME STUDIO</div><h2>Featured Game</h2><p>Start with the first project and keep building.</p></div>
+<div class="feature"><div class="featureCard"><div class="featureArt"><div class="rings"></div><div class="planet"></div></div><div class="featureInfo"><h3>3D Battle Royale</h3><p>A futuristic arena experience with enemies, weapons, pickups, health, ammunition and a shrinking battle zone.</p><a class="play" href="sheikh_vehan_3d_battle_royale_threejs.html">PLAY NOW →</a><div class="stats"><div class="stat"><b>3D</b><span>WORLD</span></div><div class="stat"><b>16</b><span>PLAYERS</span></div><div class="stat"><b>∞</b><span>UPDATES</span></div></div></div></div>
+<div class="card"><div class="icon">🚀</div><h3>What's Next?</h3><p>New games, better graphics, menus, sounds and more features will be added as we build the studio.</p><div class="status">● IN DEVELOPMENT</div></div></div>
+</section>
+<section><div class="heading"><div class="mini">THE ARCADE</div><h2>More Projects</h2><p>Every game starts as an idea.</p></div><div class="grid">
+<div class="card"><div class="icon">🐍</div><h3>Neon Snake</h3><p>Classic arcade gameplay with a futuristic neon look.</p><div class="status">COMING SOON</div></div>
+<div class="card"><div class="icon">🏎️</div><h3>Cyber Racer</h3><p>A high-speed concept for a future racing game.</p><div class="status">CONCEPT</div></div>
+<div class="card"><div class="icon">🪐</div><h3>Space World</h3><p>Explore strange planets and discover hidden worlds.</p><div class="status">PLANNED</div></div>
+</div></section>
+<section id="about"><div class="about"><div class="mini">ABOUT THE CREATOR</div><h2>Created by Sheikh Vehan</h2><p>This is the beginning of my own game website. I’m learning, experimenting and creating new projects step by step. The studio will grow as the games grow.</p></div></section>
+<footer>© 2026 <b>SHEIKH VEHAN</b> • GAME CREATION STUDIO</footer>
+</body></html>
